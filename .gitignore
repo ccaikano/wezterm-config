@@ -1,4 +1,12 @@
-/luarocks.bat
-/lua.bat
-/lua_modules
-/.luarocks
+.idea
+mesa
+conpty.dll
+libEGL.dll
+libGLESv2.dll
+OpenConsole.exe
+strip-ansi-escapes.exe
+unins000.dat
+unins000.exe
+wezterm.exe
+wezterm-gui.exe
+wezterm-mux-server.exe

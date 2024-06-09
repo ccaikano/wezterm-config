@@ -6,28 +6,31 @@ local options = {
 }
 
 if platform.is_win then
-  options.default_prog = { "powershell" }
+  options.default_prog = { "pwsh" }
   options.launch_menu = {
-    { label = " PowerShell v1", args = { "powershell" } },
-    { label = " PowerShell v7", args = { "pwsh" } },
-    { label = " Cmd", args = { "cmd" } },
-    { label = " Nushell", args = { "nu" } },
+    { label = "PowerShell Core", args = { "pwsh" } },
+    { label = "PowerShell Desktop", args = { "powershell" } },
+    { label = "Command Prompt", args = { "cmd" } },
+    { label = "Nushell", args = { "nu" } },
     {
-      label = " GitBash",
-      args = { "C:\\soft\\Git\\bin\\bash.exe" },
-    },
-    {
-      label = " AlmaLinux",
-      args = { "ssh", "kali@192.168.44.147", "-p", "22" },
+      label = "Git Bash",
+      args = { "D:\\Git\\bin\\bash.exe" },
     },
   }
 elseif platform.is_mac then
-  options.default_prog = { "/opt/homebrew/bin/fish" }
+  options.default_prog = { "/opt/homebrew/bin/fish", "-l" }
   options.launch_menu = {
-    { label = " Bash", args = { "bash" } },
-    { label = " Fish", args = { "/opt/homebrew/bin/fish" } },
-    { label = " Nushell", args = { "/opt/homebrew/bin/nu" } },
-    { label = " Zsh", args = { "zsh" } },
+    { label = "Bash", args = { "bash", "-l" } },
+    { label = "Fish", args = { "/opt/homebrew/bin/fish", "-l" } },
+    { label = "Nushell", args = { "/opt/homebrew/bin/nu", "-l" } },
+    { label = "Zsh", args = { "zsh", "-l" } },
+  }
+elseif platform.is_linux then
+  options.default_prog = { "fish", "-l" }
+  options.launch_menu = {
+    { label = "Bash", args = { "bash", "-l" } },
+    { label = "Fish", args = { "fish", "-l" } },
+    { label = "Zsh", args = { "zsh", "-l" } },
   }
 end
 
