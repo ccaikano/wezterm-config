@@ -71,15 +71,15 @@ local keys = {
   { key = "l", mods = mod.SUPER_REV, action = act.ActivatePaneDirection("Right") },
 
   -- panes: resize
-  { key = "UpArrow", mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Up", 1 }) },
-  { key = "DownArrow", mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Down", 1 }) },
-  { key = "LeftArrow", mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Left", 1 }) },
-  { key = "RightArrow", mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Right", 1 }) },
+  { key = "UpArrow", mods = mod.SUPER, action = act.AdjustPaneSize({ "Up", 1 }) },
+  { key = "DownArrow", mods = mod.SUPER, action = act.AdjustPaneSize({ "Down", 1 }) },
+  { key = "LeftArrow", mods = mod.SUPER, action = act.AdjustPaneSize({ "Left", 1 }) },
+  { key = "RightArrow", mods = mod.SUPER, action = act.AdjustPaneSize({ "Right", 1 }) },
 
   -- fonts --
   -- fonts: resize
-  { key = "UpArrow", mods = mod.SUPER, action = act.IncreaseFontSize },
-  { key = "DownArrow", mods = mod.SUPER, action = act.DecreaseFontSize },
+  { key = ",", mods = mod.SUPER, action = act.IncreaseFontSize },
+  { key = ".", mods = mod.SUPER, action = act.DecreaseFontSize },
   { key = "r", mods = mod.SUPER, action = act.ResetFontSize },
 
   -- key-tables --
