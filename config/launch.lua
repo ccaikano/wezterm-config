@@ -14,7 +14,7 @@ if platform.is_win then
     { label = "Nushell", args = { "nu" } },
     {
       label = "Git Bash",
-      args = { "D:\\Git\\bin\\bash.exe" },
+      args = { "C:\\app\\scoop\\apps\\git\\current\\bash.exe" },
     },
   }
 elseif platform.is_mac then
