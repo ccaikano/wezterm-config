@@ -8,9 +8,9 @@ local options = {
 if platform.is_win then
   options.default_prog = { "pwsh" }
   options.launch_menu = {
-    { label = "PowerShell Core", args = { "pwsh" } },
-    { label = "PowerShell Desktop", args = { "powershell" } },
-    { label = "Command Prompt", args = { "cmd" } },
+    { label = "pwsh", args = { "pwsh" } },
+    { label = "PowerShell", args = { "powershell" } },
+    { label = "Command", args = { "cmd" } },
     { label = "Nushell", args = { "nu" } },
     {
       label = "Git Bash",
